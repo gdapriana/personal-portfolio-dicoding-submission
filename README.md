@@ -1,5 +1,7 @@
 # Submission: Tugas Akhir Membuat Website
 
+![example](assets/example.png)
+
 | Field | Information |
 |---|---|
 | Nama Lengkap | I KOMANG GEDE APRIANA (gedeapriana) |
