@@ -1,0 +1,191 @@
+main.root {
+  background-color: #FFF;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+main.root article.hero {
+  padding: 56px 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  gap: 80px;
+}
+@media (min-width: 768px) {
+  main.root article.hero {
+    flex-direction: row;
+    gap: 4px;
+  }
+}
+main.root article.hero .profile {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+main.root article.hero .profile .headline {
+  color: #1a1a1a;
+  font-size: 2rem;
+}
+main.root article.hero .profile .sub-headline {
+  color: #848484;
+  line-height: 28px;
+}
+main.root article.hero .profile a.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+main.root article.hero .profile a.contact-me:hover {
+  background-color: #848484;
+}
+main.root article.hero .profile a.contact-me img {
+  width: 20px;
+}
+main.root article.hero .profile-photo {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  main.root article.hero .profile-photo {
+    width: 400px;
+  }
+}
+main.root article.hero .profile-photo img {
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100);
+  transform: scale(110%);
+}
+main.root article.about {
+  padding: 80px 16px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+main.root article.about .about-header h1 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+main.root article.about .about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  main.root article.about .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main.root article.about .about-content p {
+  color: #848484;
+  line-height: 28px;
+}
+main.root article.about .about-footer {
+  margin-left: auto;
+}
+main.root article.about .about-footer a {
+  display: flex;
+  justify-content: center;
+  color: #1a1a1a;
+  font-weight: bold;
+  gap: 4px;
+  align-items: center;
+}
+main.root article.about .about-footer a:hover {
+  color: #848484;
+}
+main.root article.about .about-footer a img {
+  width: 24px;
+}
+main.root article.portfolio {
+  padding: 80px 16px;
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+main.root article.portfolio .portfolio-header h1 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+main.root article.portfolio .portfolio-header p {
+  color: #848484;
+}
+main.root article.portfolio .portfolio-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  main.root article.portfolio .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+main.root article.portfolio .portfolio-content article {
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
+}
+main.root article.portfolio .portfolio-content article h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #848484;
+}
+main.root article.portfolio .portfolio-content article h4 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+main.root article.portfolio .portfolio-content article p {
+  line-height: 24px;
+  color: #848484;
+}
+main.root article.portfolio .portfolio-footer {
+  margin-left: auto;
+}
+main.root article.portfolio .portfolio-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+main.root article.portfolio .portfolio-footer a:hover {
+  color: #848484;
+}
+main.root article.portfolio .portfolio-footer a img {
+  width: 24px;
+}
+
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,99 @@
+@use "variables" as var
+
+header.root
+  display: flex
+  justify-content: space-between
+  @media (min-width: var.$sm)
+    justify-content: center
+  align-items: center
+  position: fixed
+  padding: 16px
+  gap: 24px
+  background-color: var.$white
+  border-bottom: 1px solid var.$border
+  z-index: 99999
+
+  .brand
+    font-weight: bold
+    font-size: 1.2rem
+    color: var.$black
+
+  nav
+    display: none
+    @media (min-width: var.$sm)
+      display: flex
+      justify-content: start
+      align-items: center
+      flex: 1
+      gap: 12px
+
+    a
+      color: var.$gray
+      font-weight: 500
+      padding: 4px 8px
+      border-radius: 4px
+      &:hover
+        color: var.$black
+        background-color: var.$border
+
+  a.contact-me
+    display: none
+    justify-content: center
+    align-items: center
+    gap: 2px
+    font-weight: bold
+    margin-left: auto
+    color: var.$black
+    padding: 4px 8px
+    border-radius: 4px
+    @media (min-width: var.$sm)
+      margin-left: 0
+      display: flex
+    &:hover
+      background-color: var.$border
+
+    img
+      width: 20px
+
+  .hamburger img
+    width: 32px
+    @media (min-width: var.$sm)
+      display: none
+
+  .float-nav
+    position: absolute
+    @media (min-width: var.$sm)
+      display: none
+    width: 100%
+    height: auto
+    top: 100%
+    left: 0
+    padding: 16px
+    display: flex
+    flex-direction: column
+    justify-content: start
+    background-color: var.$white
+    z-index: -20
+    align-items: start
+    border-bottom: 1px solid var.$border
+    border-top: 1px solid var.$border
+    .navigations
+      display: flex
+      flex-direction: column
+      justify-content: start
+      align-items: stretch
+      a
+        color: var.$gray
+        font-weight: 500
+        padding: 4px 8px
+        border-radius: 4px
+        &:hover
+          color: var.$black
+          background-color: var.$border
+
+    .contact-me
+      display: flex
+
+.hide-floatNav
+  opacity: 0
+  transform: translateY(-200px)

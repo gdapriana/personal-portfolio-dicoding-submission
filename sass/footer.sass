@@ -1,0 +1,58 @@
+@use "variables" as var
+
+footer.root
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: stretch
+
+  .navigation-bar
+    padding: 80px 16px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    border-bottom: 1px solid var.$border
+
+    .brand
+      font-weight: bold
+      font-size: 1.2rem
+      color: var.$black
+
+    .navigations
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 8px
+      flex-wrap: wrap
+      margin: 0 auto
+
+      a
+        color: var.$gray
+        font-weight: 500
+        padding: 4px 8px
+        border-radius: 4px
+        &:hover
+          color: var.$black
+          background-color: var.$border
+
+    .contact-me
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 4px
+      color: var.$black
+      font-weight: bold
+      &:hover
+        color: var.$gray
+
+      img
+        width: 24px
+
+  .copyright
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 32px
+    color: var.$gray
+    text-align: center

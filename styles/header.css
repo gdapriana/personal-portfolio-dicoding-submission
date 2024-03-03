@@ -1,0 +1,121 @@
+header.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 16px;
+  gap: 24px;
+  background-color: #FFF;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 99999;
+}
+@media (min-width: 768px) {
+  header.root {
+    justify-content: center;
+  }
+}
+header.root .brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+header.root nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  header.root nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    gap: 12px;
+  }
+}
+header.root nav a {
+  color: #848484;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+header.root nav a:hover {
+  color: #1a1a1a;
+  background-color: #f2f2f2;
+}
+header.root a.contact-me {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-weight: bold;
+  margin-left: auto;
+  color: #1a1a1a;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  header.root a.contact-me {
+    margin-left: 0;
+    display: flex;
+  }
+}
+header.root a.contact-me:hover {
+  background-color: #f2f2f2;
+}
+header.root a.contact-me img {
+  width: 20px;
+}
+header.root .hamburger img {
+  width: 32px;
+}
+@media (min-width: 768px) {
+  header.root .hamburger img {
+    display: none;
+  }
+}
+header.root .float-nav {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 100%;
+  left: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #FFF;
+  z-index: -20;
+  align-items: start;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+@media (min-width: 768px) {
+  header.root .float-nav {
+    display: none;
+  }
+}
+header.root .float-nav .navigations {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+}
+header.root .float-nav .navigations a {
+  color: #848484;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+header.root .float-nav .navigations a:hover {
+  color: #1a1a1a;
+  background-color: #f2f2f2;
+}
+header.root .float-nav .contact-me {
+  display: flex;
+}
+
+.hide-floatNav {
+  opacity: 0;
+  transform: translateY(-200px);
+}
+
+/*# sourceMappingURL=header.css.map */

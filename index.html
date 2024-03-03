@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/font.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/content.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+  <script src="./js/metadata.js" defer></script>
+  <script src="./js/header.js" defer></script>
+  <script src="./js/content.js" defer></script>
+  <script src="./js/main.js" defer></script>
+  <script src="./js/footer.js" defer></script>
+
+</head>
+<body>
+
+<header class="root">
+  <h1 class="brand"></h1>
+  <nav class="navigations"></nav>
+  <a href="/contact" class="smooth-transition contact-me">Contact Me <img src="./assets/send.svg" alt="send"></a>
+  <div class="hamburger">
+    <img class="hamburger-icon" src="./assets/hamburger.svg" alt="hamburger">
+    <img class="close-hamburger-icon hidden" src="./assets/close.svg" alt="close">
+  </div>
+  <div class="float-nav hide-floatNav smooth-transition">
+    <div class="navigations"></div>
+    <a href="/contact" class="smooth-transition contact-me">Contact Me <img src="./assets/send.svg" alt="send"></a>
+  </div>
+</header>
+
+<main class="root">
+  <article id="home" class="hero">
+    <div class="profile">
+      <h1 class="headline"></h1>
+      <p class="sub-headline"></p>
+      <a href="/contact" class="smooth-transition contact-me">Contact Me <img src="./assets/send.svg" alt="send"></a>
+    </div>
+    <aside class="profile-photo">
+      <img src="./assets/profile.png" alt="profile">
+    </aside>
+  </article>
+
+  <article id="about" class="about">
+    <header class="about-header">
+      <h1></h1>
+    </header>
+    <div class="about-content"></div>
+    <footer class="about-footer">
+      <a href="" class="smooth-transition">More About Me <img src="./assets/send.svg" alt="send"></a>
+    </footer>
+  </article>
+
+  <article id="portfolio" class="portfolio">
+    <header class="portfolio-header">
+      <h1></h1>
+      <p></p>
+    </header>
+    <div class="portfolio-content">
+    </div>
+    <footer class="portfolio-footer">
+      <a href="" class="smooth-transition">View Portfolio <img src="./assets/send.svg" alt="send"></a>
+    </footer>
+  </article>
+</main>
+
+<footer class="root">
+  <article class="navigation-bar">
+    <a href="" class="brand"></a>
+    <div class="navigations"></div>
+    <a href="" class="contact-me smooth-transition">Contact Me <img src="./assets/send.svg" alt="send"></a>
+  </article>
+  <article class="copyright">
+  </article>
+</footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@use "variables" as var
+
+main.root
+  background-color: var.$white
+  margin-top: 60px
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: stretch
+
+  & article.hero
+    padding: 56px 16px
+    display: flex
+    justify-content: center
+    flex-direction: column-reverse
+    align-items: center
+    border-bottom: 1px solid var.$border
+    gap: 80px
+    @media (min-width: var.$sm)
+      flex-direction: row
+      gap: 4px
+
+    & .profile
+      flex: 1
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: start
+      gap: 20px
+
+      .headline
+        color: var.$black
+        font-size: 2rem
+
+      .sub-headline
+        color: var.$gray
+        line-height: 28px
+
+      a.contact-me
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 2px
+        font-weight: bold
+        color: var.$black
+        margin-top: 20px
+        padding: 8px 12px
+        border-radius: 4px
+        background-color: var.$border
+        &:hover
+          background-color: var.$gray
+
+        img
+          width: 20px
+
+    & .profile-photo
+      width: 300px
+      display: flex
+      justify-content: center
+      align-items: center
+      @media (min-width: var.$sm)
+        width: 400px
+      aspect-ratio: 1/1
+      overflow: hidden
+      border-radius: 50%
+
+      & img
+        width: 100%
+        object-fit: cover
+        filter: grayscale(100)
+        transform: scale(110%)
+
+  & article.about
+    padding: 80px 16px
+    border-bottom: 1px solid var.$border
+    display: flex
+    gap: 20px
+    flex-direction: column
+    justify-content: center
+    align-items: start
+
+    .about-header h1
+      font-size: 1.5rem
+      color: var.$black
+
+    .about-content
+      display: grid
+      grid-template-columns: 1fr
+      gap: 20px
+      @media (min-width: var.$sm)
+        grid-template-columns: repeat(2, 1fr)
+      p
+        color: var.$gray
+        line-height: 28px
+
+    .about-footer
+      margin-left: auto
+      a
+        display: flex
+        justify-content: center
+        color: var.$black
+        font-weight: bold
+        gap: 4px
+        align-items: center
+        &:hover
+          color: var.$gray
+        img
+          width: 24px
+
+
+  & article.portfolio
+    padding: 80px 16px
+    display: flex
+    border-bottom: 1px solid var.$border
+    gap: 32px
+    flex-direction: column
+    justify-content: center
+    align-items: stretch
+
+    .portfolio-header
+      h1
+        font-size: 1.5rem
+        color: var.$black
+        margin-bottom: 10px
+
+      p
+        color: var.$gray
+
+    .portfolio-content
+      display: grid
+      grid-template-columns: 1fr
+      gap: 16px
+      @media (min-width: var.$sm)
+        grid-template-columns: repeat(2, 1fr)
+
+      article
+        padding: 32px
+        border-radius: 16px
+        background-color: var.$border
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: start
+        gap: 16px
+
+        h5
+          font-size: 1.2rem
+          font-weight: bold
+          color: var.$gray
+
+        h4
+          font-size: 1.4rem
+          color: var.$black
+          font-weight: bold
+
+        p
+          line-height: 24px
+          color: var.$gray
+
+    .portfolio-footer
+      margin-left: auto
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 4px
+        color: var.$black
+        font-weight: bold
+        &:hover
+          color: var.$gray
+
+
+        img
+          width: 24px

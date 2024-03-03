@@ -1,0 +1,61 @@
+footer.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+footer.root .navigation-bar {
+  padding: 80px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #f2f2f2;
+}
+footer.root .navigation-bar .brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+footer.root .navigation-bar .navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+footer.root .navigation-bar .navigations a {
+  color: #848484;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+footer.root .navigation-bar .navigations a:hover {
+  color: #1a1a1a;
+  background-color: #f2f2f2;
+}
+footer.root .navigation-bar .contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+footer.root .navigation-bar .contact-me:hover {
+  color: #848484;
+}
+footer.root .navigation-bar .contact-me img {
+  width: 24px;
+}
+footer.root .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: #848484;
+  text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */
