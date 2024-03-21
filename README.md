@@ -10,6 +10,7 @@
 | ID Submission | 2885593 |
 | Dikirim pada | 01-Mar-2024 01:33:07 |
 | Tipe | EnrollmentToken: DBS Foundation Coding Camp 2024: Front-End Web Developer |
+| Stars | ![stars](assets/stars.png) |
 
 Anda telah mempelajari beberapa materi seperti:
 - Dasar HTML (dapat dipelajari mulai dari modul Pengenalan ke HTML)
